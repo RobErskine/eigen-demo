@@ -7,8 +7,6 @@ exports.handler = async (event, context) => {
 
     let eigenAPI = 'https://staging.eigendev.com/WebAPI'
 
-    console.log(process.env.EIGEN_EPA_KEY)
-
     let SREQObject = {
         "SCtrl": {
             "Platform": "MiraPayCapture",
