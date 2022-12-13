@@ -36,7 +36,6 @@ exports.handler = async (event, context) => {
     try {
         eigenResponse = await fetch(eigenAPI, settings)
         eigenData = await eigenResponse.json()
-        console.log(eigenResponse)
     } catch (err) {
         console.log({err})
         return {

@@ -72,6 +72,7 @@
         const { pending, data: mpx } = await useAsyncData('mpx', () => $fetch('/.netlify/functions/procedure-create?id=' + id, { server: false}))
         
         // Initialize MiraPay Capture, while setting field styles
+        console.log(mpx);
         let MPXSessionID = mpx._rawValue.SDFields.SessionID 
         MiraPayCapture.init({
             sessionID: MPXSessionID, 
